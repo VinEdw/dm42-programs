@@ -265,7 +265,7 @@ $$
 ### `PFD`
 
 Perform partial fraction decomposition.
-The numerator polynomial $p(x)$ should have a higher degree than the denominator polynomial $q(x)$.
+The numerator polynomial $p(x)$ should have a lower degree than the denominator polynomial $q(x)$.
 The y-register should hold the polynomial array for $p(x)$.
 
 The x-register should hold an array with 4 columns and rows representing the linear factors and irreducible quadratic factors of $q(x)$.
