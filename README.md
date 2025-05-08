@@ -93,6 +93,19 @@ Remove from the input matrix the specified row and column, returning the minor m
 
 Take the determinant of the minor matrix for the input matrix at the specified row and column.
 
+### `COFACT`
+
+Return the cofactor of the input matrix at the specified row and column.
+This is calculated by taking the minor determinant, then potentially flipping the sign according to the position in the matrix.
+
+$$
+\begin{bmatrix}
+  + & - & + & \dots \\
+  - & + & - & \dots \\
+  + & - & + & \dots \\
+  \vdots & \vdots & \vdots & \ddots \\
+\end{bmatrix}
+$$
 ### `PRIME`
 
 Append on the stack the lowest, positive, non-one factor of the input integer on the stack.
