@@ -80,6 +80,11 @@ $$
 
 Take the input matrix on the stack and put it into reduced row echelon form (RREF), returning the new matrix on the stack.
 
+### `MMOD`
+
+Take the input matrix and the given modulus on the stack, and perform the `MOD` operation on each element of the matrix.
+Return the new matrix.
+
 ### `PRIME`
 
 Append on the stack the lowest, positive, non-one factor of the input integer on the stack.
