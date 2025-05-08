@@ -37,15 +37,11 @@
 36 ÷
 37 END
 
-00 { 17-Byte Prgm }
+00 { 12-Byte Prgm }
 01▸LBL "FX"
 02 FUNC 11
 03 LSTO "X"
-04 X↑2
-05 5
-06 ×
-07 SIN
-08 END
+04 END
 
 00 { 88-Byte Prgm }
 01▸LBL "SUMFX"
