@@ -100,9 +100,9 @@ This is calculated by taking the minor determinant, then potentially flipping th
 
 $$
 \begin{bmatrix}
-  + & - & + & \dots \\
-  - & + & - & \dots \\
-  + & - & + & \dots \\
+  (+) & (-) & (+) & \dots \\
+  (-) & (+) & (-) & \dots \\
+  (+) & (-) & (+) & \dots \\
   \vdots & \vdots & \vdots & \ddots \\
 \end{bmatrix}
 $$
