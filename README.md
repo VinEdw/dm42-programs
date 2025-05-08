@@ -89,6 +89,10 @@ Return the new matrix.
 
 Remove from the input matrix the specified row and column, returning the minor matrix.
 
+### `mDET`
+
+Take the determinant of the minor matrix for the input matrix at the specified row and column.
+
 ### `PRIME`
 
 Append on the stack the lowest, positive, non-one factor of the input integer on the stack.
