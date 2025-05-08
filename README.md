@@ -106,6 +106,16 @@ $$
   \vdots & \vdots & \vdots & \ddots \\
 \end{bmatrix}
 $$
+
+### `ADJ`
+
+Calculate the adjugate of the input matrix.
+The adjugate matrix is the transpose of the matrix of the cofactors of the input matrix.
+
+$$
+A \mathrm{adj}(A) = \mathrm{det}(A) \cdot I
+$$
+
 ### `PRIME`
 
 Append on the stack the lowest, positive, non-one factor of the input integer on the stack.
