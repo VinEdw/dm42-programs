@@ -124,6 +124,15 @@ Append on the stack the lowest, positive, non-one factor of the input integer on
 
 Take the two input integers on the stack and return their greatest common factor.
 
+### `XGCF`
+
+Use the extended Euclidean algorithm to solve the following equation for the given inputs $a$ and $b$.
+$$
+a x + b y = \mathrm{gcf}(a,b)
+$$
+Note that $x$ and $y$ are integers.
+Return $\mathrm{gcf}(a,b)$, $x$, and $y$.
+
 ### `LCM`
 
 Take the two input integers on the stack and return their lowest common multiple.
