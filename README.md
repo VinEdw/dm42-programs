@@ -53,14 +53,10 @@ $$
 g(x) = \ldots
 $$
 
-### `POLY4`
+### `POLYs`
 
-A 4th degree polynomial created using a variable menu.
-It returns the polynomial evaluated at the given value of `X` to the stack.
-
-$$
-p(x) = Ax^4 + Bx^3 + Cx^2 + Dx + E
-$$
+Program for the built-in `SOLVER` that finds the roots of polynomial matrix stored in `POLY`.
+The roots are stored in `X`
 
 ### `IDMAT`
 

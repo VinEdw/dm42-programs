@@ -96,32 +96,14 @@
 03 RCL "X"
 04 END
 
-00 { 64-Byte Prgm }
-01▸LBL "POLY4"
-02 MVAR "A"
-03 MVAR "B"
-04 MVAR "C"
-05 MVAR "D"
-06 MVAR "E"
-07 MVAR "X"
-08 RCL "X"
-09 4
-10 Y↑X
-11 RCL× "A"
-12 RCL "X"
-13 3
-14 Y↑X
-15 RCL× "B"
-16 +
-17 RCL "X"
-18 X↑2
-19 RCL× "C"
-20 +
-21 RCL "X"
-22 RCL× "D"
-23 +
-24 RCL+ "E"
-25 END
+00 { 34-Byte Prgm }
+01▸LBL "POLYs"
+02 MVAR "POLY"
+03 MVAR "X"
+04 RCL "POLY"
+05 RCL "X"
+06 XEQ "POLYX"
+07 END
 
 00 { 75-Byte Prgm }
 01▸LBL "IDMAT"
