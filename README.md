@@ -124,6 +124,20 @@ $$
 
 Calculate the trace of the input square matrix by summing the elements on its main diagonal.
 
+### `CHPLY`
+
+Calculate the characteristic polynomial of the input square matrix using the Faddeev-LeVerrier algorithm.
+
+$$
+p_A(t) = \det(tI - A) = \sum_{n=0}^{N} c_n t^n
+$$
+$$
+c_N = 1
+$$
+$$
+c_{N-m} = -\frac{1}{m} \sum_{k=1}^{m} c_{N-m+k} \mathrm{Tr}[A^k]
+$$
+
 ### `PRIME`
 
 Append on the stack the lowest, positive, non-one factor of the input integer on the stack.
