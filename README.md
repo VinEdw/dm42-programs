@@ -80,6 +80,10 @@ $$
 
 Take the input matrix on the stack and put it into reduced row echelon form (RREF), returning the new matrix on the stack.
 
+### `MPWR`
+
+Take the input matrix and the given positive integer power on the stack, and return the matrix raised to that power.
+
 ### `MMOD`
 
 Take the input matrix and the given modulus on the stack, and perform the `MOD` operation on each element of the matrix.
