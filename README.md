@@ -116,6 +116,10 @@ $$
 A \mathrm{adj}(A) = \mathrm{det}(A) \cdot I
 $$
 
+### `Tr`
+
+Calculate the trace of the input square matrix by summing the elements on its main diagonal.
+
 ### `PRIME`
 
 Append on the stack the lowest, positive, non-one factor of the input integer on the stack.
