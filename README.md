@@ -78,7 +78,11 @@ Take the input matrix on the stack and put it into reduced row echelon form (RRE
 
 ### `MPWR`
 
-Take the input matrix and the given positive integer power on the stack, and return the matrix raised to that power.
+Take the input matrix and the given integer power on the stack, and return the matrix raised to that power.
+
+$$
+\mathrm{MPWR}(A, p) = A^p
+$$
 
 ### `MMOD`
 
