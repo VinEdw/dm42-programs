@@ -375,3 +375,12 @@ Program to create a custom menu with functions to switch between rectangular, cy
     - $x = r \sin(\theta) \cos(\phi)$
     - $y = r \sin(\theta) \sin(\phi)$
     - $z = r \cos(\theta)$
+
+### `ST→[]`
+
+Combine the coordinate is the X-, Y-, and Z-registers into a 1×3 matrix in the X-register.
+
+### `[]→ST`
+
+Return the coordinates in a 1×3 matrix to the X-, Y-, and Z-registers.
+
