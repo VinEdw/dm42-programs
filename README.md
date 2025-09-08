@@ -358,6 +358,7 @@ $$
 ### `RCS`
 
 Program to create a custom menu with functions to switch between rectangular, cylindrical, and spherical coordinates.
+It also contains shortcuts to `ST→[]` and `[]→ST`.
 
 - Rectangular → Cylindrical
     - $r = \sqrt{x^2 + y^2}$
