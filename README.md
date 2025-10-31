@@ -86,7 +86,7 @@ $$
 
 ### `MEXP`
 
-Calculate the matrix exponential of the input matrix.
+Approximate the matrix exponential of the input matrix.
 The Taylor Series for $e^M$ is as follows.
 
 $$ \exp(M) = \sum\limits_{n=0}^{\infty} \frac {M^n} {n!} $$
