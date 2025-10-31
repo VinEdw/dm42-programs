@@ -109,7 +109,7 @@ The Frobenius norm of a matrix $A$ is calculated as follows.
 
 $$ \mathrm{FNRM}(A) = \sqrt{ \sum\limits_{i} \sum\limits_{j} |a_{ij}|^2 } $$
 
-Notice that $\mathrm{FNRM}(A) >= a_{ij}$.
+Notice that $\mathrm{FNRM}(A) \ge a_{ij}$.
 Thus, by ensuring $\mathrm{FNRM}(B_n) < \mathrm{err}$, that ensures every element of $B_n$ is less than `err`.
 
 ### `MMOD`
