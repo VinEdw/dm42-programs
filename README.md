@@ -107,7 +107,7 @@ $$ \mathrm{FNRM}(B) < \mathrm{err} $$
 
 The Frobenius norm of a matrix $A$ is calculated as follows.
 
-$$ \mathrm{FNRM}(A) = \sqrt{ \sum\limits_{i} \sum\limits_{j} |a_{ij}|^2 } $$
+$$ \mathrm{FNRM}(A) = \sqrt{ \sum\limits_{i} \sum\limits_{j} |a_{ij}|^2 } = \sqrt{ \mathrm{Tr}(A A^\dagger) } $$
 
 Notice that $\mathrm{FNRM}(A) \ge a_{ij}$.
 Thus, by ensuring $\mathrm{FNRM}(B_n) < \mathrm{err}$, that ensures every element of $B_n$ is less than `err`.
