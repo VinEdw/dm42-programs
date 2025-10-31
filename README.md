@@ -84,6 +84,34 @@ $$
 \mathrm{MPWR}(A, p) = A^p
 $$
 
+### `MEXP`
+
+Calculate the matrix exponential of the input matrix.
+The Taylor Series for $e^M$ is as follows.
+
+$$ \exp{M} = \sum\limits_{n=0}^{\infty} \frac {M^n} {n!} $$
+
+The amount to bump the result on each iteration is $B_n$.
+
+$$ B_n = \frac{A^n}{n!} $$
+
+$B_n$ can be recursively calculated as follows.
+
+$$ B_{n+1} = \frac{1}{n+1} B_n A $$
+$$ B_0 = I $$
+
+Iterations continue until the Frobenius norm (`FNRM`) of $B_n$ falls below some `err` threshold.
+For this program, `err` was set to $10^{-9}$.
+
+$$ \mathrm{FNRM}(B) < \mathrm{err} $$
+
+The Frobenius norm of a matrix $A$ is calculated as follows.
+
+$$ \mathrm{FNRM}(A) = \sqrt{ \sum\limits_{i} \sum\limits_{j} |a_{ij}|^2 } $$
+
+Notice that $\mathrm{FNRM}(A) > a_{ij}$.
+Thus, by ensuring $\mathrm{FNRM}(B_n) < \mathrm{err}$, that ensures every element of $B_n$ is less than `err`.
+
 ### `MMOD`
 
 Take the input matrix and the given modulus on the stack, and perform the `MOD` operation on each element of the matrix.
