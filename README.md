@@ -93,11 +93,11 @@ $$ \exp(M) = \sum\limits_{n=0}^{\infty} \frac {M^n} {n!} $$
 
 The amount to bump the result on each iteration is $B_n$.
 
-$$ B_n = \frac{A^n}{n!} $$
+$$ B_n = \frac{M^n}{n!} $$
 
 $B_n$ can be recursively calculated as follows.
 
-$$ B_{n+1} = \frac{1}{n+1} B_n A $$
+$$ B_{n+1} = \frac{1}{n+1} B_n M $$
 $$ B_0 = I $$
 
 Iterations continue until the Frobenius norm (`FNRM`) of $B_n$ falls below some `err` threshold.
