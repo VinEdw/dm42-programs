@@ -293,7 +293,7 @@
 36 RCL "M2"
 37 END
 
-00 { 73-Byte Prgm }
+00 { 71-Byte Prgm }
 01▸LBL "MEXP"
 02 FUNC 11
 03 L4STK
@@ -317,9 +317,8 @@
 21 1ᴇ-9
 22 X<Y?
 23 GTO 10
-24▸LBL 90
-25 RCL "R"
-26 END
+24 RCL "R"
+25 END
 
 00 { 47-Byte Prgm }
 01▸LBL "MMOD"
