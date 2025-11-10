@@ -35,6 +35,15 @@ $$
 \mathrm{SUM} = \sum_{n = \mathrm{START}}^{\mathrm{STOP}} f(n)
 $$
 
+### `PRDFX`
+
+Take the product of the function `FX` from `START` to `STOP`, returning the result and saving it in `PROD`.
+The step size is equal to 1.
+
+$$
+\mathrm{PROD} = \prod_{n = \mathrm{START}}^{\mathrm{STOP}} f(n)
+$$
+
 ### `dFX`
 
 Approximate the derivative of `FX` with respect to `X` at the given input value from the stack, returning the value to the stack.
