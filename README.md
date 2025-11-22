@@ -322,7 +322,7 @@ Take the maximum and minimum integer values from the stack, and return a random 
 
 ### `POLY`
 
-Program to create a custom menu containing the polynomial related functions.
+Program to edit the custom menu to contain polynomial related functions.
 Polynomials are represented using single row arrays where each element holds a coefficient for a different term.
 The first element holds the coefficient for $x^0$, the second element holds the coefficient for $x^1$, the third element holds the coefficient for $x^2$, and so on.
 
