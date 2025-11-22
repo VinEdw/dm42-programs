@@ -338,6 +338,7 @@ $$
 ### `POLYX`
 
 Evaluate the polynomial array in the y-register at the x-value in the x-register.
+Return the polynomial in the y-register for chaining, and the result in the x-register.
 
 ### `POLYn`
 

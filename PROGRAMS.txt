@@ -1675,9 +1675,9 @@
 09 ASSIGN "PFD" TO 13
 10 END
 
-00 { 78-Byte Prgm }
+00 { 82-Byte Prgm }
 01▸LBL "POLYX"
-02 FUNC 21
+02 FUNC 22
 03 L4STK
 04 LSTO "X"
 05 X<>Y
@@ -1703,7 +1703,9 @@
 25 RCLEL
 26 RCL "SUM"
 27 +
-28 END
+28 RCL "P"
+29 X<>Y
+30 END
 
 00 { 39-Byte Prgm }
 01▸LBL "POLYn"
