@@ -451,3 +451,7 @@ These are functions often needed when writing programs.
 
 Program to edit the custom menu to contain debugging tools on the second row.
 These are functions often needed when debugging programs.
+
+### `UNITS`
+
+Program to edit the custom menu to contain unit conversion programs on the second row.
