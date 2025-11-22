@@ -446,3 +446,8 @@ The first row of the custom menu is reserved for functions that should always be
 
 Program to edit the custom menu to contain programming tools on the second row.
 These are functions often needed when writing programs.
+
+### `DEBUG`
+
+Program to edit the custom menu to contain debugging tools on the second row.
+These are functions often needed when debugging programs.
