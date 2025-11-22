@@ -434,3 +434,10 @@ $$
 $$
 z^* = a - b i
 $$
+
+### `CCSTM`
+
+Program to clear the second and third rows of the custom menu.
+When paired with other programs that modify those rows of the custom menu, it provides a way to switch between sets of functions.
+This allows functions more relevant to the problem at hand to be made readily available.
+The first row of the custom menu is reserved for functions that should always be easily accessed.
