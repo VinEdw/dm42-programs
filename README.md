@@ -423,3 +423,14 @@ Combine the coordinate is the X-, Y-, and Z-registers into a 1×3 matrix in the 
 
 Return the coordinates in a 1×3 matrix to the X-, Y-, and Z-registers.
 
+### `CONJ`
+
+Return the complex conjugate of the input in the X-register.
+
+$$
+z = a + b i
+$$
+
+$$
+z^* = a - b i
+$$
