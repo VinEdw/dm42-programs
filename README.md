@@ -455,3 +455,7 @@ p_n(x) \rightarrow \begin{bmatrix}
   C_0 & C_1 & C_2 & \ldots & C_n
 \end{bmatrix}
 $$
+
+### `VEC`
+
+Program to edit the custom menu to contain vector related functions on the second and third rows.
