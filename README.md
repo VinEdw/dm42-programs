@@ -337,8 +337,8 @@ $$
 
 ### `POLYX`
 
-Evaluate the polynomial array in the y-register at the x-value in the x-register.
-Return the polynomial in the y-register for chaining, and the result in the x-register.
+Evaluate the polynomial array in the Y-register at the x-value in the X-register.
+Return the polynomial in the Y-register for chaining, and the result in the X-register.
 
 ### `POLYn`
 
@@ -363,7 +363,7 @@ Multiply the two input polynomial arrays and return the resulting polynomial arr
 
 ### `POLY÷`
 
-Divide the polynomial array in the y-register $P_1(x)$ by the polynomial array in the x-register $P_2(x)$, returning polynomial arrays for the quotient $Q(x)$ and the remainder $R(x)$.
+Divide the polynomial array in the Y-register $P_1(x)$ by the polynomial array in the X-register $P_2(x)$, returning polynomial arrays for the quotient $Q(x)$ and the remainder $R(x)$.
 
 $$
 \frac {P_1(x)} {P_2(x)} = Q(x) + \frac {R(x)} {P_2(x)}
@@ -373,9 +373,9 @@ $$
 
 Perform partial fraction decomposition.
 The numerator polynomial $p(x)$ should have a lower degree than the denominator polynomial $q(x)$.
-The y-register should hold the polynomial array for $p(x)$.
+The Y-register should hold the polynomial array for $p(x)$.
 
-The x-register should hold an array with 4 columns and rows representing the linear factors and irreducible quadratic factors of $q(x)$.
+The X-register should hold an array with 4 columns and rows representing the linear factors and irreducible quadratic factors of $q(x)$.
 Each row represents a linear/quadratic factor.
 Column 1 holds the coefficient for the constant term.
 Column 2 holds the coefficient for the linear term.
