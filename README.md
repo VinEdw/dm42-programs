@@ -62,11 +62,6 @@ $$
 g(x) = \ldots
 $$
 
-### `POLYs`
-
-Program for the built-in `SOLVER` that finds the roots of polynomial matrix stored in `POLY`.
-The roots are stored in `X`
-
 ### `IDMAT`
 
 Create an identity matrix with the dimension given on the stack, and return the new matrix to the stack.
@@ -368,6 +363,11 @@ Divide the polynomial array in the Y-register $P_1(x)$ by the polynomial array i
 $$
 \frac {P_1(x)} {P_2(x)} = Q(x) + \frac {R(x)} {P_2(x)}
 $$
+
+### `POLYs`
+
+Program for the built-in `SOLVER` that finds the roots of polynomial matrix stored in `POLY`.
+The roots are stored in `X`
 
 ### `PFD`
 
