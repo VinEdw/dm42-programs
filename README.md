@@ -62,6 +62,29 @@ $$
 g(x) = \ldots
 $$
 
+### `PRIME`
+
+Append on the stack the lowest, positive, non-one factor of the input integer on the stack.
+
+### `GCF`
+
+Take the two input integers on the stack and return their greatest common factor.
+
+### `XGCF`
+
+Use the extended Euclidean algorithm to solve the following equation for the given inputs $a$ and $b$.
+
+$$
+a x + b y = \mathrm{gcf}(a,b)
+$$
+
+Note that $x$ and $y$ are integers.
+Return $\mathrm{gcf}(a,b)$, $x$, and $y$.
+
+### `LCM`
+
+Take the two input integers on the stack and return their lowest common multiple.
+
 ### `IDMAT`
 
 Create an identity matrix with the dimension given on the stack, and return the new matrix to the stack.
@@ -169,29 +192,6 @@ $$
 $$
 c_{N-m} = -\frac{1}{m} \sum_{k=1}^{m} c_{N-m+k} \mathrm{Tr}[A^k]
 $$
-
-### `PRIME`
-
-Append on the stack the lowest, positive, non-one factor of the input integer on the stack.
-
-### `GCF`
-
-Take the two input integers on the stack and return their greatest common factor.
-
-### `XGCF`
-
-Use the extended Euclidean algorithm to solve the following equation for the given inputs $a$ and $b$.
-
-$$
-a x + b y = \mathrm{gcf}(a,b)
-$$
-
-Note that $x$ and $y$ are integers.
-Return $\mathrm{gcf}(a,b)$, $x$, and $y$.
-
-### `LCM`
-
-Take the two input integers on the stack and return their lowest common multiple.
 
 ### `LENGTH`
 
