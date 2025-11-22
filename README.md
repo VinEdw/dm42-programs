@@ -459,3 +459,7 @@ $$
 ### `VEC`
 
 Program to edit the custom menu to contain vector related functions on the second and third rows.
+
+### `MTRX`
+
+Program to edit the custom menu to contain matrix related functions on the second and third rows.
