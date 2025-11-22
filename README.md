@@ -234,7 +234,7 @@ Program to create a custom menu containing the hyperbolic trig functions.
 
 ### `T/D`
 
-Program to create a custom menu containing time and date functions.
+Program to edit the custom menu to contain time and date functions on the second and third rows.
 
 ### `FRAC`
 
