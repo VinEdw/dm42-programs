@@ -311,21 +311,6 @@ Exit the `SET` menu by pressing the `R/S` button.
 
 Take the maximum and minimum integer values from the stack, and return a random integer between them.
 
-### `POLY`
-
-Program to edit the custom menu to contain polynomial related functions.
-Polynomials are represented using single row arrays where each element holds a coefficient for a different term.
-The first element holds the coefficient for $x^0$, the second element holds the coefficient for $x^1$, the third element holds the coefficient for $x^2$, and so on.
-
-$$
-p_n(x) = C_0 + C_1 x + C_2 x^2 + \ldots + C_n x^n
-$$
-$$
-p_n(x) \rightarrow \begin{bmatrix}
-  C_0 & C_1 & C_2 & \ldots & C_n
-\end{bmatrix}
-$$
-
 ### `POLYX`
 
 Evaluate the polynomial array in the Y-register at the x-value in the X-register.
@@ -455,3 +440,18 @@ Program to edit the custom menu to contain unit conversion programs on the secon
 ### `T/D`
 
 Program to edit the custom menu to contain time and date functions on the second and third rows.
+
+### `POLY`
+
+Program to edit the custom menu to contain polynomial related functions.
+Polynomials are represented using single row arrays where each element holds a coefficient for a different term.
+The first element holds the coefficient for $x^0$, the second element holds the coefficient for $x^1$, the third element holds the coefficient for $x^2$, and so on.
+
+$$
+p_n(x) = C_0 + C_1 x + C_2 x^2 + \ldots + C_n x^n
+$$
+$$
+p_n(x) \rightarrow \begin{bmatrix}
+  C_0 & C_1 & C_2 & \ldots & C_n
+\end{bmatrix}
+$$
