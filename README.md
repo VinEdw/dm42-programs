@@ -227,10 +227,6 @@ Enter the starting value, select the starting units, then select the desired uni
 
 Program to create a custom menu containing the hyperbolic trig functions.
 
-### `T/D`
-
-Program to edit the custom menu to contain time and date functions on the second and third rows.
-
 ### `FRAC`
 
 Take the input number on the stack and show the fraction approximation (within a tolerance of $1 \times 10^{-9}$).
@@ -455,3 +451,7 @@ These are functions often needed when debugging programs.
 ### `UNITS`
 
 Program to edit the custom menu to contain unit conversion programs on the second row.
+
+### `T/D`
+
+Program to edit the custom menu to contain time and date functions on the second and third rows.
