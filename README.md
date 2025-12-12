@@ -463,3 +463,9 @@ Program to edit the custom menu to contain vector related functions on the secon
 ### `MTRX`
 
 Program to edit the custom menu to contain matrix related functions on the second and third rows.
+
+### `DPLOT`
+
+Program to display a plot of the desired function with the given window.
+It is a modified version the `DPLOT` program from the HP-42S manual.
+It preserves the stack state when used in `NSTK` mode and adapts to the display size.
