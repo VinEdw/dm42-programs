@@ -464,7 +464,7 @@ Program to edit the custom menu to contain vector related functions on the secon
 
 Program to edit the custom menu to contain matrix related functions on the second and third rows.
 
-### `DPLOT`
+### `RPLOT`
 
 Program to display a plot of the desired function with the given window.
 It is a modified version the `DPLOT` program from the HP-42S manual.
