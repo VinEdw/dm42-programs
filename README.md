@@ -466,6 +466,9 @@ Program to edit the custom menu to contain matrix related functions on the secon
 
 ### `RPLOT`
 
-Program to display a plot of the desired function with the given window.
-It is a modified version the `DPLOT` program from the HP-42S manual.
+Program to display a plot of the desired real-valued function with the given window.
+This is a modified version the `DPLOT` program from the HP-42S manual.
 It preserves the stack state when used in `NSTK` mode and adapts to the display size.
+If the input function does not use a variable menu, then it should take in an X-value as input and return a Y-value.
+If the input function does use a variable menu, then the independent variable to be plotted on the horizontal axis should be selected after specifying all the other constants.
+
