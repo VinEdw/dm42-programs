@@ -85,6 +85,41 @@ Return $\mathrm{gcf}(a,b)$, $x$, and $y$.
 
 Take the two input integers on the stack and return their lowest common multiple.
 
+### `HYPER`
+
+Program to create a custom menu containing the hyperbolic trig functions.
+
+### `FRAC`
+
+Take the input number on the stack and show the fraction approximation (within a tolerance of $1 \times 10^{-9}$).
+This approximation is created by traversing the left subtree of the Stern-Brocot tree.
+The bounds for the fraction start at $\frac 0 1$ and $\frac 1 1$.
+A middle fraction is created by taking the mediant of the lower and higher bounds.
+If the input number is lower than the middle fraction, then the middle fraction becomes the new higher bound.
+If the input number is greater than the middle fraction, then the middle fraction becomes the new lower bound.
+This process repeats until the middle fraction is within tolerance of the input number.
+
+$$
+\mathrm{mediant}\left( \frac a b, \frac c d \right) = \frac {a + c} {b + d}
+$$
+
+### `Const`
+
+Program to create a custom menu containing various physics constants.
+Values were taken from a [page by NIST](https://physics.nist.gov/cuu/Constants/index.html).
+
+### `COUNTER`
+
+A tally counter program.
+The up arrow increases the `CNT` by the `INC`.
+The down arrow decreases the `CNT` by the `INC`.
+`CNT` and `INC` can be viewed, recalled, or updated using the `SET` variable menu.
+Exit the `SET` menu by pressing the `R/S` button.
+
+### `RNG`
+
+Take the maximum and minimum integer values from the stack, and return a random integer between them.
+
 ### `IDMAT`
 
 Create an identity matrix with the dimension given on the stack, and return the new matrix to the stack.
@@ -223,29 +258,6 @@ Enter the starting value, select the starting units, then select the desired uni
 Program for pressure unit conversions.
 Enter the starting value, select the starting units, then select the desired units.
 
-### `HYPER`
-
-Program to create a custom menu containing the hyperbolic trig functions.
-
-### `FRAC`
-
-Take the input number on the stack and show the fraction approximation (within a tolerance of $1 \times 10^{-9}$).
-This approximation is created by traversing the left subtree of the Stern-Brocot tree.
-The bounds for the fraction start at $\frac 0 1$ and $\frac 1 1$.
-A middle fraction is created by taking the mediant of the lower and higher bounds.
-If the input number is lower than the middle fraction, then the middle fraction becomes the new higher bound.
-If the input number is greater than the middle fraction, then the middle fraction becomes the new lower bound.
-This process repeats until the middle fraction is within tolerance of the input number.
-
-$$
-\mathrm{mediant}\left( \frac a b, \frac c d \right) = \frac {a + c} {b + d}
-$$
-
-### `Const`
-
-Program to create a custom menu containing various physics constants.
-Values were taken from a [page by NIST](https://physics.nist.gov/cuu/Constants/index.html).
-
 ### `GetDisp`
 
 Return an integer that holds the flags representing the display format.
@@ -294,22 +306,6 @@ Program for the built-in `SOLVER` that implements the ideal gas law.
 $$
 PV = nRT
 $$
-
-### `GREET`
-
-Have the calculator say a friendly greeting to your friends.
-
-### `COUNTER`
-
-A tally counter program.
-The up arrow increases the `CNT` by the `INC`.
-The down arrow decreases the `CNT` by the `INC`.
-`CNT` and `INC` can be viewed, recalled, or updated using the `SET` variable menu.
-Exit the `SET` menu by pressing the `R/S` button.
-
-### `RNG`
-
-Take the maximum and minimum integer values from the stack, and return a random integer between them.
 
 ### `POLYX`
 
@@ -415,6 +411,10 @@ $$
 $$
 z^* = a - b i
 $$
+
+### `GREET`
+
+Have the calculator say a friendly greeting to your friends.
 
 ### `CCSTM`
 
