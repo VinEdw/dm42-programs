@@ -472,3 +472,11 @@ It preserves the stack state when used in `NSTK` mode and adapts to the display 
 If the input function does not use a variable menu, then it should take in an X-value as input and return a Y-value.
 If the input function does use a variable menu, then the independent variable to be plotted on the horizontal axis should be selected after specifying all the other constants.
 
+### `CPLOT`
+
+Program to display a plot of the desired complex-valued function with the given window.
+This is a modified version the `DPLOT` program from the HP-42S manual.
+It preserves the stack state when used in `NSTK` mode and adapts to the display size.
+If the input function does not use a variable menu, then it should take in a T-value as input and return a complex value (X-value as the real part and Y-value as the imaginary part).
+If the input function does use a variable menu, then the independent variable should be selected after specifying all the other constants.
+
