@@ -29,8 +29,9 @@ $$
 ### `SUMF`
 
 Sum the function stored in `SFCN` from `START` to `STOP`, returning the result.
-The specified function should take one input from the stack and return one value to the stack.
 The step size is equal to 1.
+If the input function does not use a variable menu, then it should take one input from the stack and return one value to the stack.
+If the input function does use a variable menu, then the summation variable should be selected after specifying all the other constants.
 
 $$
 \mathrm{SUM} = \sum_{n = \mathrm{START}}^{\mathrm{STOP}} f(n)
@@ -39,8 +40,9 @@ $$
 ### `PRODF`
 
 Take the product of the function stored in `PFCN` from `START` to `STOP`, returning the result.
-The specified function should take one input from the stack and return one value to the stack.
 The step size is equal to 1.
+If the input function does not use a variable menu, then it should take one input from the stack and return one value to the stack.
+If the input function does use a variable menu, then the product variable should be selected after specifying all the other constants.
 
 $$
 \mathrm{PROD} = \prod_{n = \mathrm{START}}^{\mathrm{STOP}} f(n)
