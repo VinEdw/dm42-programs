@@ -26,18 +26,20 @@ $$
 f(x) = \ldots
 $$
 
-### `SUMFX`
+### `SUMF`
 
-Sum the function `FX` from `START` to `STOP`, returning the result and saving it in `SUM`.
+Sum the function stored in `SFCN` from `START` to `STOP`, returning the result.
+The specified function should take one input from the stack and return one value to the stack.
 The step size is equal to 1.
 
 $$
 \mathrm{SUM} = \sum_{n = \mathrm{START}}^{\mathrm{STOP}} f(n)
 $$
 
-### `PRDFX`
+### `PRODF`
 
-Take the product of the function `FX` from `START` to `STOP`, returning the result and saving it in `PROD`.
+Take the product of the function stored in `PFCN` from `START` to `STOP`, returning the result.
+The specified function should take one input from the stack and return one value to the stack.
 The step size is equal to 1.
 
 $$
