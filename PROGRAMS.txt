@@ -1,4 +1,4 @@
-00 { 78-Byte Prgm }
+00 { 66-Byte Prgm }
 01▸LBL "QUAD"
 02 MVAR "A"
 03 MVAR "B"
@@ -6,36 +6,28 @@
 05 VARMENU "QUAD"
 06 STOP
 07 EXITALL
-08 RCL "B"
-09 X↑2
-10 4
-11 RCL "A"
-12 ×
-13 RCL "C"
-14 ×
-15 -
-16 STO "D"
-17 CLX
-18 RCL "B"
-19 +/-
-20 RCL "D"
-21 SQRT
-22 -
-23 2
+08 FUNC 02
+09 RCL "B"
+10 X↑2
+11 4
+12 RCL× "A"
+13 RCL× "C"
+14 -
+15 STO "D"
+16 SQRT
+17 DUP
+18 +/-
+19 RCL- "B"
+20 X<>Y
+21 RCL- "B"
+22 2
+23 RCL× "A"
 24 ÷
-25 RCL "A"
-26 ÷
-27 STOP
-28 RCL "B"
-29 +/-
-30 RCL "D"
-31 SQRT
-32 +
-33 2
-34 ÷
-35 RCL "A"
-36 ÷
-37 END
+25 X<>Y
+26 LASTX
+27 ÷
+28 X<>Y
+29 END
 
 00 { 12-Byte Prgm }
 01▸LBL "FX"

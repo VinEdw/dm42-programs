@@ -11,10 +11,14 @@ Note: I usually keep my calculator in [`NSTK` mode](https://thomasokken.com/free
 ### `QUAD`
 
 Solve quadratic equations in the form $Ax^2 + Bx + C = 0$ using the quadratic formula.
-Enter the values for the constants, press `R/S` to get the first solution, then press `R/S` again to get the second solution.
+Enter the values for the constants, then press `R/S` to get the two solutions.
+The discriminant is saved in variable `D`.
 
 $$
 x = \frac{-B \pm \sqrt{B^2 - 4AC}}{2A}
+$$
+$$
+D = B^2 - 4AC
 $$
 
 ### `FX`
