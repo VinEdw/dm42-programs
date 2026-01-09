@@ -97,9 +97,10 @@ Take the two input integers on the stack and return their lowest common multiple
 
 Program to create a custom menu containing the hyperbolic trig functions.
 
-### `FRAC`
+### `FFRAC`
 
-Take the input number on the stack and show the fraction approximation (within a tolerance of $1 \times 10^{-9}$).
+Take the input number on the stack and return the fraction approximation (within a tolerance of $1 \times 10^{-9}$).
+The function returns the numerator in the Y-register and the denominator in the X-register.
 This approximation is created by traversing the left subtree of the Stern-Brocot tree.
 The bounds for the fraction start at $\frac 0 1$ and $\frac 1 1$.
 A middle fraction is created by taking the mediant of the lower and higher bounds.
@@ -110,6 +111,17 @@ This process repeats until the middle fraction is within tolerance of the input 
 $$
 \mathrm{mediant}\left( \frac a b, \frac c d \right) = \frac {a + c} {b + d}
 $$
+
+### `FRAC`
+
+Take the input number on the stack and show the fraction approximation given by `FFRAC`.
+
+### `XFRAC`
+
+An extended version of the `FRAC` program.
+The program creates a custom menu that can display various kinds of fraction approximations.
+It can display a standard fraction, mixed number, square root, or multiple of π.
+The user chooses which approximation to view.
 
 ### `Const`
 
