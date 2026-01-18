@@ -278,6 +278,11 @@ Enter the starting value, select the starting units, then select the desired uni
 Program for pressure unit conversions.
 Enter the starting value, select the starting units, then select the desired units.
 
+### `TIMES`
+
+Program for time unit conversions.
+Enter the starting value, select the starting units, then select the desired units.
+
 ### `GetDisp`
 
 Return an integer that holds the flags representing the display format.
