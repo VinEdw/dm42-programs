@@ -288,6 +288,11 @@ Enter the starting value, select the starting units, then select the desired uni
 Program for volume unit conversions.
 Enter the starting value, select the starting units, then select the desired units.
 
+### `BYTES`
+
+Program for digital information or data size conversions ("bytes").
+Enter the starting value, select the starting units, then select the desired units.
+
 ### `GetDisp`
 
 Return an integer that holds the flags representing the display format.
