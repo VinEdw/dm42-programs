@@ -429,7 +429,7 @@ It also contains shortcuts to `ST→[]` and `[]→ST`.
 
 ### `ST→[]`
 
-Combine the coordinate is the X-, Y-, and Z-registers into a 1×3 matrix in the X-register.
+Combine the coordinates in the X-, Y-, and Z-registers into a 1×3 matrix in the X-register.
 
 ### `[]→ST`
 
