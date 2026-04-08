@@ -248,6 +248,22 @@ $$
 c_{N-m} = -\frac{1}{m} \sum_{k=1}^{m} c_{N-m+k} \mathrm{Tr}[A^k]
 $$
 
+### `LNSPC`
+
+Take in 3 inputs from the stack and return a row matrix of evenly spaced numbers.
+Start at the value in the Z-register and end at the value in the Y-register.
+The number of samples is given by the value in the X-register.
+
+$$
+X = [1 \times N~\mathrm{Matrix}]
+$$
+$$
+\Delta x = \frac {x_{1N} - x_{11}} {N - 1}
+$$
+$$
+x_{1j} = x_{11} + (j - 1) \Delta x
+$$
+
 ### `LENGTH`
 
 Program for length unit conversions.
