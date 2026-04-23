@@ -61,11 +61,14 @@ The first term on the right-hand side reflects how if $\mathrm{PMT} = 0$, then $
 
 The second term reflects how once a payment is made, the interest from the remaining compounding periods no longer apply to that payment.
 It can be derived using the partial sum equation for a geometric series.
+
 $$
 \sum_{n=0}^{N-1} x^n = \frac{1-x^N}{1-x}
 $$
+
 Add up each payment scaled by the interest that should not be applied.
 Note that since $p$ only equals 0 or 1, $(1+i)^p = (1+ip)$.
+
 $$
 \begin{align*}
 \sum_{n=0}^{N-1} \mathrm{PMT} (1+i)^{N-1-n+p} &=  \mathrm{PMT} (1+i)^{N-1+p} \sum_{n=0}^{N-1} \left(\frac{1}{1+i}\right)^{n} \\
