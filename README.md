@@ -48,13 +48,13 @@ Program for the built-in `SOLVER` that implements the time value of money equati
     - Negative for money paid out
 
 $$
-0 = \mathrm{PV} + (1 + ip) \mathrm{PMT} \left[ \frac{1 - (1 + i)^{-N}}{i} \right] + FV (1 + i)^{-N}
+0 = \mathrm{PV} + (1 + ip) \mathrm{PMT} \left[ \frac{1 - (1 + i)^{-N}}{i} \right] + \mathrm{FV} (1 + i)^{-N}
 $$
 
-This equation can be rearranged to solve for $-FV$.
+This equation can be rearranged to solve for $-\mathrm{FV}$.
 
 $$
--FV = \mathrm{PV} (1 + i)^{N} + (1 + ip) \mathrm{PMT} \left[ \frac{(1 + i)^{N} - 1}{i} \right]
+-\mathrm{FV} = \mathrm{PV} (1 + i)^{N} + (1 + ip) \mathrm{PMT} \left[ \frac{(1 + i)^{N} - 1}{i} \right]
 $$
 
 The first term on the right-hand side reflects how if $\mathrm{PMT} = 0$, then $\mathrm{PV}$ will grow exponentially.
@@ -91,7 +91,7 @@ To mitigate this loss of information, the equation can be rewritten to use the b
 Using those substitutions gives the following form of the equation, which is used for the `SOLVER` program.
 
 $$
--FV = \mathrm{PV}~\exp(N~\mathrm{log1p}(i)) + \mathrm{PMT} \left(\frac{1}{i} + p \right)~\mathrm{expm1}(N~\mathrm{log1p}(i))
+-\mathrm{FV} = \mathrm{PV}~\exp(N~\mathrm{log1p}(i)) + \mathrm{PMT} \left(\frac{1}{i} + p \right)~\mathrm{expm1}(N~\mathrm{log1p}(i))
 $$
 
 ### `FX`
