@@ -29,6 +29,37 @@
 28 X<>Y
 29 END
 
+00 { 75-Byte Prgm }
+01▸LBL "TVM"
+02 MVAR "N"
+03 MVAR "I%"
+04 MVAR "PV"
+05 MVAR "PMT"
+06 MVAR "FV"
+07 RCL "I%"
+08 100
+09 ÷
+10 LSTO "i"
+11 LN1+X
+12 RCL× "N"
+13 DUP
+14 E↑X-1
+15 RCL× "PMT"
+16 RCL "i"
+17 1/X
+18 FC? 00
+19 GTO 10
+20 1
+21 +
+22▸LBL 10
+23 ×
+24 X<>Y
+25 E↑X
+26 RCL× "PV"
+27 +
+28 RCL+ "FV"
+29 END
+
 00 { 12-Byte Prgm }
 01▸LBL "FX"
 02 FUNC 11

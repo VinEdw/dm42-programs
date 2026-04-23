@@ -21,6 +21,76 @@ $$
 D = B^2 - 4AC
 $$
 
+### `TVM`
+
+Program for the built-in `SOLVER` that implements the time value of money equation from the HP42S owner's manual.
+
+- `N`
+    - Number of payments or compounding periods
+- `I%`
+    - Interest rate per period as a percent
+    - $i = \frac {\mathrm{I\%}} {100}$
+- `PV`
+    - Present value
+    - Occurs at the beginning of the first period
+    - Positive for money received
+    - Negative for money paid out
+- `PMT`
+    - Payment made each period
+    - If $p = 0$ (flag 00 clear), then payments occur at the *end* of each period, *after* interest has been applied
+    - If $p = 1$ (flag 00 set), then payments occur at the *beginning* of each period, *before* interest has been applied
+    - Positive for money received
+    - Negative for money paid out
+- `FV`
+    - Future value
+    - Occurs at the end of the $N$th period
+    - Positive for money received
+    - Negative for money paid out
+
+$$
+0 = \mathrm{PV} + (1 + ip) \mathrm{PMT} \left[ \frac{1 - (1 + i)^{-N}}{i} \right] + FV (1 + i)^{-N}
+$$
+
+This equation can be rearranged to solve for $-FV$.
+
+$$
+-FV = \mathrm{PV} (1 + i)^{N} + (1 + ip) \mathrm{PMT} \left[ \frac{(1 + i)^{N} - 1}{i} \right]
+$$
+
+The first term on the right-hand side reflects how if $\mathrm{PMT} = 0$, then $\mathrm{PV}$ will grow exponentially.
+
+The second term reflects how once a payment is made, the interest from the remaining compounding periods no longer apply to that payment.
+It can be derived using the partial sum equation for a geometric series.
+$$
+\sum_{n=0}^{N-1} x^n = \frac{1-x^N}{1-x}
+$$
+Add up each payment scaled by the interest that should not be applied.
+Note that since $p$ only equals 0 or 1, $(1+i)^p = (1+ip)$.
+$$
+\begin{align*}
+\sum_{n=0}^{N-1} \mathrm{PMT} (1+i)^{N-1-n+p} &=  \mathrm{PMT} (1+i)^{N-1+p} \sum_{n=0}^{N-1} \left(\frac{1}{1+i}\right)^{n} \\
+&= \mathrm{PMT} (1+i)^{N-1+p} \left[\frac{1 - (1+i)^{-N}}{1-(1+i)^{-1}}\right] \\
+&= \mathrm{PMT} (1+i)^{p} \left[\frac{(1+i)^N - 1}{(1+i)-1}\right] \\
+&= \mathrm{PMT} (1+ip) \left[\frac{(1+i)^N - 1}{i}\right] \\
+\end{align*}
+$$
+
+In regards to the computation, consider what happens when $i$ is very small.
+If $i$ is much less than 1, then adding 1 pushes out the least significant digits of $i$ in order to make room for placeholder zeros.
+This loss of significant digits is more noticeable when $N$ is large.
+To mitigate this loss of information, the equation can be rewritten to use the built-in `E↑X-1` and `LN1+X` functions.
+
+- $\mathrm{E↑X-1} = \mathrm{expm1}(x) = \exp(x) - 1$
+- $\mathrm{LN1+X} = \mathrm{log1p}(x) = \log(1 + x)$ Note: $\log()$ here refers to the natural logarithm
+- $(1 + i)^N = \exp(N~\mathrm{log1p}(i))$
+- $(1 + i)^N - 1 = \mathrm{expm1}(N~\mathrm{log1p}(i))$
+
+Using those substitutions gives the following form of the equation, which is used for the `SOLVER` program.
+
+$$
+-FV = \mathrm{PV}~\exp(N~\mathrm{log1p}(i)) + \mathrm{PMT} \left(\frac{1}{i} + p \right)~\mathrm{expm1}(N~\mathrm{log1p}(i))
+$$
+
 ### `FX`
 
 A placeholder function that takes one input from the stack and returns one value to the stack.
