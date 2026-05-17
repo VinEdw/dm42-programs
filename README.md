@@ -4,7 +4,8 @@ This is a collection of programs on my [DM42n](https://www.swissmicros.com/produ
 The programs should be compatible with [Free42](https://thomasokken.com/free42/).
 As of now, I keep them all in one file `PROGRAMS.txt`.
 
-Note: I usually keep my calculator in [`NSTK` mode](https://thomasokken.com/free42/#big-stack).
+Note: I usually keep my calculator in [`NSTK` mode](https://thomasokken.com/free42/#big-stack) to avoid losing values off the top of the stack.
+I typically switch to `4STK` mode to keep the stack from growing rapidly when using the equation solver, numerical integration, or `Σ+`.
 
 ## Descriptions
 
