@@ -135,15 +135,6 @@ $$
 f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x - h)}{2h}
 $$
 
-### `GX`
-
-A placeholder function that takes one input, `X`, from a variable menu, and returns one value to the stack.
-Edit it to have the desired function of interest.
-
-$$
-g(x) = \ldots
-$$
-
 ### `PRIME`
 
 Append on the stack the lowest, positive, non-one factor of the input integer on the stack.
