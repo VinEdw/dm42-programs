@@ -95,15 +95,6 @@ $$
 -\mathrm{FV} = \mathrm{PV}~\exp(N~\mathrm{log1p}(i)) + \mathrm{PMT} \left(\frac{1}{i} + p \right)~\mathrm{expm1}(N~\mathrm{log1p}(i))
 $$
 
-### `FX`
-
-A placeholder function that takes one input from the stack and returns one value to the stack.
-Edit it to have the desired function of interest.
-
-$$
-f(x) = \ldots
-$$
-
 ### `SUMF`
 
 Sum the function stored in `SFCN` from `START` to `STOP`, returning the result.
@@ -124,15 +115,6 @@ If the input function does use a variable menu, then the product variable should
 
 $$
 \mathrm{PROD} = \prod_{n = \mathrm{START}}^{\mathrm{STOP}} f(n)
-$$
-
-### `dFX`
-
-Approximate the derivative of `FX` with respect to `X` at the given input value from the stack, returning the value to the stack.
-The derivative is approximated using a symmetric difference quotient with a small step size ($h = 1 \times 10^{-6}$).
-
-$$
-f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x - h)}{2h}
 $$
 
 ### `PRIME`

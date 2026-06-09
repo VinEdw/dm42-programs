@@ -60,12 +60,6 @@
 28 RCL+ "FV"
 29 END
 
-00 { 12-Byte Prgm }
-01▸LBL "FX"
-02 FUNC 11
-03 LSTO "X"
-04 END
-
 00 { 127-Byte Prgm }
 01▸LBL "SUMF"
 02 MVAR "SFCN"
@@ -157,23 +151,6 @@
 42▸LBL F
 43 X<>Y
 44 END
-
-00 { 40-Byte Prgm }
-01▸LBL "dFX"
-02 FUNC 11
-03 DUP
-04 1ᴇ-6
-05 LSTO "h"
-06 +
-07 XEQ "FX"
-08 X<>Y
-09 RCL- "h"
-10 XEQ "FX"
-11 -
-12 RCL÷ "h"
-13 2
-14 ÷
-15 END
 
 00 { 95-Byte Prgm }
 01▸LBL "PRIME"
