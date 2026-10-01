@@ -474,12 +474,12 @@ Program to create a custom menu with functions to switch between rectangular, cy
 It also contains shortcuts to `ST→[]` and `[]→ST`.
 
 - Rectangular → Cylindrical
-    - $r = \sqrt{x^2 + y^2}$
+    - $\rho = \sqrt{x^2 + y^2}$
     - $\phi = \mathrm{atan2}(y, x)$
     - $z = z$
 - Cylindrical → Rectangular
-    - $x = r \cos(\phi)$
-    - $y = r \sin(\phi)$
+    - $x = \rho \cos(\phi)$
+    - $y = \rho \sin(\phi)$
     - $z = z$
 - Rectangular → Spherical
     - $r = \sqrt{x^2 + y^2 + z^2}$
